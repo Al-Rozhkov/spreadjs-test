@@ -11,7 +11,7 @@
 
 <script>
 import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2016colorful.css";
-// import GC from '@grapecity/spread-sheets';
+import GC from '@grapecity/spread-sheets';
 import {
     GcSpreadSheets,
     GcWorksheet,
@@ -40,18 +40,22 @@ export default {
         initSpread(spread) {
             this.spread = spread;
 
-            if (data.length > 0) {
+            if (this.dataTable.length > 0) {
                 spread.fromJSON(data[0]);
                 let sheet = spread.getSheet(0);
                 sheet.suspendPaint();
+
+                const direction = GC.Spread.Sheets.Outlines.OutlineDirection.backward;
+                sheet.rowOutlines.direction(direction);
+
                 sheet.rowOutlines.group(3, 4);
                 sheet.rowOutlines.group(8, 3);
                 sheet.rowOutlines.group(12, 2);
                 sheet.rowOutlines.group(15, 3);
                 sheet.rowOutlines.group(3, 18);
 
-                sheet.columnOutlines.group(1, 4);
-                sheet.columnOutlines.group(6, 4);
+                // sheet.columnOutlines.group(1, 4);
+                // sheet.columnOutlines.group(6, 4);
                 sheet.resumePaint();
             }
         }
