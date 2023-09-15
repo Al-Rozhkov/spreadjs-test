@@ -39,6 +39,7 @@ export default {
     methods: {
         initSpread(spread) {
             this.spread = spread;
+            this.$emit('ready', spread);
 
             if (this.dataTable.length > 0) {
                 spread.fromJSON(data[0]);
