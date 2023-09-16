@@ -1,10 +1,10 @@
 <template>
     <gc-spread-sheets :hostClass="hostClass" @workbookInitialized="initSpread">
         <gc-worksheet :dataSource="dataTable">
-            <gc-column :width="width" :dataField="'preferredFullName'"></gc-column>
-            <gc-column :width="width" :dataField="'jobTitleName'"></gc-column>
-            <gc-column :width="width" :dataField="'phoneNumber'"></gc-column>
-            <gc-column :width="width" :dataField="'region'"></gc-column>
+            <gc-column :width="colWidth" :dataField="'preferredFullName'"></gc-column>
+            <gc-column :width="colWidth" :dataField="'jobTitleName'"></gc-column>
+            <gc-column :width="colWidth" :dataField="'phoneNumber'"></gc-column>
+            <gc-column :width="colWidth" :dataField="'region'"></gc-column>
         </gc-worksheet>
     </gc-spread-sheets>
 </template>
@@ -17,7 +17,7 @@ import {
     GcWorksheet,
     GcColumn,
 } from "@grapecity/spread-sheets-vue";
-import { data } from '~/data/data'
+import { data } from '~/data/outlineData'
 
 export default {
     components: {
@@ -28,7 +28,7 @@ export default {
     data() {
         return {
             hostClass: "spread-host",
-            width: 100,
+            colWidth: 100,
         };
     },
     computed: {
@@ -70,3 +70,4 @@ export default {
     height: 600px;
 }
 </style>
+~/data/outlineData

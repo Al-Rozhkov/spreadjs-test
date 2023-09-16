@@ -1,5 +1,5 @@
 export const data = [{
-    "version": "14.0.5",
+    "version": "16.2.2",
     "tabStripRatio": 0.6,
     "customList": [],
     "sheets": {
@@ -87,14 +87,12 @@ export const data = [{
                    "b": 114
                 }
              },
-             "headingFont": "Calibri Light",
-             "bodyFont": "Calibri"
           },
           "data": {
              "dataTable": {
                 "0": {
                    "0": {
-                      "value": "Income Statement 2019-2020",
+                      "value": "Outline feature with XLSX export",
                       "style": "__builtInStyle2"
                    }
                 },
@@ -119,7 +117,7 @@ export const data = [{
                       "style": "__builtInStyle4"
                    },
                    "5": {
-                      "value": 2019,
+                      "value": 2022,
                       "style": "__builtInStyle5"
                    },
                    "6": {
@@ -139,7 +137,7 @@ export const data = [{
                       "style": "__builtInStyle4"
                    },
                    "10": {
-                      "value": 2020,
+                      "value": 2023,
                       "style": "__builtInStyle5"
                    }
                 },
@@ -1534,14 +1532,14 @@ export const data = [{
        {
           "backColor": "#ffc7ce",
           "foreColor": "#9c0006",
-          "font": "normal normal 14.7px Calibri",
+          "font": "normal normal 14.7px",
           "themeFont": "Body",
           "name": "Bad"
        },
        {
           "backColor": "#f2f2f2",
           "foreColor": "#fa7d00",
-          "font": "normal bold 14.7px Calibri",
+          "font": "normal bold 14.7px",
           "themeFont": "Body",
           "borderLeft": {
              "color": "#7f7f7f",
@@ -1566,7 +1564,7 @@ export const data = [{
        {
           "backColor": "#a5a5a5",
           "foreColor": "Background 1 0",
-          "font": "normal bold 14.7px Calibri",
+          "font": "normal bold 14.7px",
           "themeFont": "Body",
           "borderLeft": {
              "color": "#3f3f3f",
