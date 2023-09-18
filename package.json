@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@grapecity/spread-excelio": "^16.2.2",
+    "@grapecity/spread-sheets-charts": "^16.2.2",
     "@grapecity/spread-sheets-io": "^16.2.2",
     "@grapecity/spread-sheets-vue": "^16.2.2"
   }

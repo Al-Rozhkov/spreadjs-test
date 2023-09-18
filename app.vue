@@ -8,7 +8,7 @@
         <NuxtLink to="/outline">Outline</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/graphs">Graphs</NuxtLink>
+        <NuxtLink to="/charts">Charts</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/pivot-tables">Pivot Tables</NuxtLink>
