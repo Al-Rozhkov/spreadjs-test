@@ -6,7 +6,7 @@
             </ClientOnly>
         </div>
         <div class="sidebar">
-            <button @click="onExport">Export to xslx</button>
+            <button @click="onExport">Export to xlsx</button>
         </div>
     </div>
 </template>
@@ -16,12 +16,6 @@ import "@grapecity/spread-sheets-vue";
 import "@grapecity/spread-sheets-io";
 import GC from '@grapecity/spread-sheets';
 import { saveAs, getExportOptions } from '~/utils/utils'
-// import "@grapecity/spread-excelio";
-// import "@grapecity/spread-sheets-charts";
-// import "@grapecity/spread-sheets-shapes";
-// import "@grapecity/spread-sheets-slicers";
-// import "@grapecity/spread-sheets-pivot-addon";
-// import "@grapecity/spread-sheets-tablesheet";
 
 const spread = ref(null);
 

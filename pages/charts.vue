@@ -5,7 +5,7 @@
         </gc-spread-sheets>
 
         <div class="options">
-            <button @click="onExport">Export to xslx</button>
+            <button @click="onExport">Export to xlsx</button>
         </div>
     </div>
 </template>
@@ -348,27 +348,6 @@ function changeSeriesBorder(chart) {
         chart.series().set(i, seriesItem);
     }
 }
-
-function getActiveChart(sheet) {
-    let activeChart = null;
-    sheet.charts.all().forEach(function (chart) {
-        if (chart.isSelected()) {
-            activeChart = chart;
-        }
-    });
-    return activeChart;
-}
-
-function judgeIsEmptyOneCell(sheet, range) {
-    if (range.rowCount === 1 && range.colCount === 1) {
-        let cell = sheet.getCell(range.row, range.col);
-        if (!cell.text()) {
-            return true;
-        }
-    }
-    return false;
-}
-
 </script>
 
 <style lang="scss">
